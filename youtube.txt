@@ -25,13 +25,13 @@ class Ytubedownload:
 
         self.root.geometry("%dx%d+0+0"%(width,height))
 
-        self.bg = ImageTk.PhotoImage(file="bg_image.jpg")  #if you are reading this code in github so download this image from this repository only or https://github.com/NitinSingh8/N-Programmer/blob/main/bg_image.jpg
+        self.bg = ImageTk.PhotoImage(file="bg_image.jpg") 
         self.tk_bg = tk.Label(self.root, image=self.bg)
         self.tk_bg.place(x=700, y=0, relwidth=1, relheight=1)
 
         self.fontstyle = tkfont.Font(family="Lucida Grande", size=15)
         self.heading = tk.Label(self.root, text="Youtube Video Downloader", font=("oblique",30),bg='black',fg="white", padx="50").place(x=500,y=0)
-        self.heading = tk.Label(self.root, text="~    Nitin Singh", font=("oblique", 30), fg='black',padx="50").place(x=1000, y=50)
+        self.heading = tk.Label(self.root, text="~ Ashish Mishra ", font=("oblique", 30), fg='black',padx="50").place(x=1000, y=50)
 
         self.enter_link_label = tk.Label(self.root, text="Enter the link here  ", font=self.fontstyle, padx="50").grid(row=0, column=0, padx=50, pady=(70, 0))
         self.enter_link_entry = tk.Entry(self.root, width=30, borderwidth=5)
@@ -134,4 +134,4 @@ class Ytubedownload:
 
 root = tk.Tk()
 interface = Ytubedownload(root)
-root.mainloop(
+root.mainloop()
